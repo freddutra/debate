@@ -1,0 +1,9 @@
+.debate-menage-header-style { border-bottom: 1px solid #000000; padding-bottom: 5px; }
+.debate-menage-table { width: 100%; }
+.debate-menage-table tr { border-bottom: 1px dashed; }
+.debate-menage-table tr:nth-child(even) { background-color: #f2f2f2 }
+.debate-menage-table tr th { padding-left: 5px; padding-right: 5px; border: 1px solid; }
+.debate-menage-table tr td { padding-bottom: 2px; }
+.debate-menage-table tr td button { margin-bottom: 0; }
+.debate-manage-table-running {background-color: #E3FCEC;}
+.debate-manage-table-not-running {background-color: #FCEBEA;}
