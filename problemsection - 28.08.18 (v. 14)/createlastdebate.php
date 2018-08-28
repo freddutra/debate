@@ -48,6 +48,7 @@ try{
 
     // Remove capability to reply from other posts
     //$contextadad = context_module::instance($courseid);
+    /*
     $returnforumlist = $DB->get_records('forum', array('course'=>$courseid));
     foreach($returnforumlist as $forum){
         //echo "Forum ID: " . $forum->id;
@@ -66,13 +67,13 @@ try{
                 try{$DB->insert_record('role_capabilities', array('contextid'=>$context->id, 'roleid'=>5, 'capability'=> 'mod/forum:exportownpost', 'timemodified'=>time(), 'permission'=>"-1"));}catch(\Exception $e){}
             }
         }
-    }
+    }*/
     
     // Create last forum (debate)
     $forum = new stdClass();
     $forum->course = $courseid;
     $forum->type = "single";    
-    $forum->name = "Conclusão";
+    $forum->name = "Conclusão" . " (" . $getmodule->debatename . ")";
     $forum->intro = "";
     $forum->timemodified = time();
     $forum->id = $DB->insert_record("forum", $forum);
